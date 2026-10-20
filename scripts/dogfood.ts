@@ -10,15 +10,15 @@
  */
 import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync } from 'node:fs';
 import { join, relative, extname, basename } from 'node:path';
-import { analyzeArtifact } from '../webway/analyze.js';
-import type { Artifact, WebwayAnalysisResult } from '../webway/types.js';
+import { analyzeArtifact } from '../src/analyze.js';
+import type { Artifact, WebwayAnalysisResult } from '../src/types.js';
 
 // ---------------------------------------------------------------------------
 // Configuration
 // ---------------------------------------------------------------------------
 
 const ROOT = process.cwd();
-const REPORT_DIR = join(ROOT, '.monolith', 'reports');
+const REPORT_DIR = join(ROOT, 'reports');
 const JSON_OUT = join(REPORT_DIR, 'webway-dogfood-v0.json');
 const MD_OUT = join(REPORT_DIR, 'webway-dogfood-v0.md');
 
