@@ -70,6 +70,13 @@ console.log(result.suggestedRegion); // e.g. "Cognitive Architecture"
 console.log(result.mentalModels);    // the primary pattern
 ```
 
+## Documentation
+
+`docs/webway-v0.md` is the current design note. `docs/README.md` indexes the
+larger cognitive-architecture research and vision documentation (ADRs,
+research notes, long-term vision) inherited from MONOLITH's Phase 1 — see
+`docs/MIGRATION_NOTE.md` for where it came from.
+
 ## Dogfooding
 
 ```bash
